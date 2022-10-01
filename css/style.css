@@ -211,8 +211,34 @@ textarea:focus,
         -ms-flex-pack: justify;
             justify-content: space-between;
 }
+
+/* grid styles */
+.grid-wraper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
+    grid-gap: 30px 50px;
+    /* row-gap: 30px;
+    column-gap: 50px; */
+}
+.grid-item {
+    background-color: #55ACEE;
+    height: 100px;
+}
+/* .grid1 {
+    grid-row: 1 / 3;
+    background-color: yellow;
+} */
+
+
+
+
+
+
 /* responsive */
 @media (max-width: 1024px) {
+    /* .grid-wraper {
+        grid-template-columns: repeat(2,1fr);
+    } */
     .form-wraper {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -253,3 +279,9 @@ textarea:focus,
         width: 100%;
     }
  }
+/* 
+ @media (max-width:480px) {
+    .grid-wraper {
+        grid-template-columns: repeat(1,1fr);
+    }
+ } */
